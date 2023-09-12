@@ -1,0 +1,65 @@
+{% extends 'master.html' %}
+{% block title  %}Home{% endblock %}
+{% block style%}
+{% load static %}
+<style>
+.cont{
+    display:relative;
+    
+}    
+.div1{
+    color:none;
+}
+.clubimg{
+    width:100%;
+    height:550px;
+}
+.div2{
+    text-align:center;
+    
+}
+.emoji{
+    font-size:35px;
+}
+.emoji1{
+    color:blue;
+    font-size:25px;
+    padding-right:15px;
+}
+.emoji2{
+    color:pink;
+    font-size:25px;
+    padding-right:15px;
+}
+.emoji3{
+    color:blue;
+    font-size:25px;
+    padding-right:15px;
+}
+.emoji4{
+    color:green;
+    font-size:25px;
+}
+</style>
+
+{% endblock  %}
+
+{% block body %}
+<div class="grid-container cont">
+        
+    <div class="div1">
+        <img src={% static 'user/sport4.jpg' %} alt="club_image" class="clubimg">
+    </div>
+    <div class="div2">
+        <p class="heading"></p>
+        
+            <div ><p class="emoji"><b>Follow for more updates!!!</b></p>
+                <a href="#"><i class="emoji1 fa-brands fa-telegram "></i></a>
+                <a href="#"><i class="emoji2 fa-brands fa-instagram "></i></a>
+                <a href="#"><i class="emoji3 fa-brands fa-facebook " ></i></a>
+                <a href="#"><i class="emoji4 fa-brands fa-whatsapp " ></i></a>
+            </div>
+           
+    </div>
+</div>
+{% endblock  %}
